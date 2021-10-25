@@ -23,7 +23,7 @@ int main()
     char cadenaEj[] = "batata";
 
     resultadoPrecio = aplicarAumento(65);
-    //reemplazarCaracteres(cadenaEj, 'a', 'o');
+    reemplazarCaracteres(cadenaEj, 'a', 'o');
     ordenarVacunas(lista, TAM);
 
 
@@ -47,6 +47,7 @@ int reemplazarCaracteres(char *cadena, char objetivo, char reemplazo)
             cadena[i] = reemplazo;
             contador++;
         }
+        i++;
     }
     return contador;
 }
